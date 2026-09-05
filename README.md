@@ -2,6 +2,8 @@
 
 Scan source files for `os.getenv()` calls and generate `.env.example` files.
 
+Source and issues: https://github.com/felixhartmannnn/envseed
+
 ## About
 
 `envseed` reads Python source files, extracts environment variable names from `os.getenv("NAME")` calls, and emits a `.env.example` listing. It is intentionally small and stdlib-only.
