@@ -18,7 +18,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
 
     args = parser.parse_args(argv)
     results = scan(args.paths, include=args.include, skip=tuple(args.skip))
-    ordered_vars: List[str] = []
+    ordered_vars: list = []
     seen: set = set()
     for _, vars_ in results:
         for var in vars_:
